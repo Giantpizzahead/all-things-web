@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: consolas, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 0.3em 0;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 1em 3em;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+  animation: typing-anim 3s steps(22), cursor-flash 1s infinite;
+  -webkit-animation: typing-anim 3s steps(22), cursor-flash 1s infinite;
+}
+
+.list-header {
+  
+}
+
+.list-description {
+
+}
+
+.website-list {
+  display: block;
+  padding: 0;
+}
+
+.website-list li {
+  list-style-type: none;
+}
+
+.website-list a {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0em;
+  padding: 1.5em 0em;
+  border: 5px solid gray;
+  border-radius: 1em;
+  color: #4af626;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.website-list a:hover {
+  background-color: #041301;
+  color: white;
+}
+
+.website-list .bad-link {
+  color: red;
+}
+
+.website-list .bad-link:hover {
+  background-color: red;
+  color: yellow;
+}
+
+@keyframes cursor-flash {
+  0% { border-color: white; }
+  50% { border-color: black; }
+  100% { border-color: white; }
+}
+
+@keyframes typing-anim {
+  0% { width: 0ch; }
+  30% { width: 0ch; }
+  100% { width: 22ch; }
+}
+
+@media (max-width: 1100px) {
+  header {
+    font-size: 1em;
+  }
+
+  .typing {
+    border-right: 2px solid;
+  }
+}

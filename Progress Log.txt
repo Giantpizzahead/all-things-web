@@ -29,3 +29,4 @@ Flutter (Google's UI Toolkit)
 
 Used resources:
 codeSTACKr's YouTube tutorials
+Lots of Googling for stuff

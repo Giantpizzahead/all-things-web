@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My (Not-so-first) Website!</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hello World!</h1>
+
+    <!--Navbar-->
+    <div id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#about-us">About</a></li>
+        <li><a href="https://www.youtube.com/watch?v=j5a0jTc9S10" target="_blank">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="fixed">
+    <p>Hello! Do you want <strong>cookies</strong>?</p>
+    <p>We all LOVE <strong>cookies</strong>!!!</p>
+    <button id="cookies-button">I love cookies too!</button>
+  </div>
+
+  <main class="container">
+    <aside id="sidebar">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi porro fuga nam reiciendis nesciunt hic qui facere iure itaque nemo iste voluptates, veniam, soluta excepturi quas mollitia recusandae inventore deserunt odit error maiores incidunt? Repudiandae dolores doloremque exercitationem numquam quasi. Quod accusamus necessitatibus delectus magnam quibusdam rem iusto doloremque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi porro fuga nam reiciendis nesciunt hic qui facere iure itaque nemo iste voluptates, veniam, soluta excepturi quas mollitia recusandae inventore deserunt odit error maiores incidunt? Repudiandae dolores doloremque exercitationem numquam quasi. Quod accusamus necessitatibus delectus magnam quibusdam rem iusto doloremque!</p>
+    </aside>
+    <!--Main information-->
+    <h2>Main Background</h2>
+    <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Architecto, ex qui labore, dicta unde maiores consectetur libero voluptas molestiae voluptatem cupiditate perspiciatis eos officiis dolorum repellat <del>odio</del>? Pariatur officiis doloremque assumenda! Beatae ratione nihil exercitationem facere mollitia aliquid amet voluptatibus illo maiores accusamus atque soluta porro optio dolor odit voluptatum nostrum iusto repudiandae, cum <ins>temporibus</ins>, dolores veniam dolorem itaque dicta. Ut quod ex velit necessitatibus quas adipisci obcaecati iusto, at praesentium molestiae voluptas <em>reiciendis</em>! Necessitatibus officia quod doloribus iusto placeat sapiente eum ipsam tempore in dolore odio maxime magnam sed molestiae aspernatur, illo laudantium dolores laborum eligendi id natus? Iusto.</p>
+
+    <img src="images/pizza.png" id="pizza-img">
+
+    <h2>General Info</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aperiam earum ad veniam quo ipsam. Facere et officiis accusamus quam qui ad ea eos! Quod neque eligendi voluptates quidem dolorem iusto eum iure explicabo natus deleniti quam sed, itaque minima. Nesciunt in provident similique a, cumque sequi recusandae ipsam incidunt, corporis laborum dolor explicabo facilis atque illo quisquam nostrum porro quod repudiandae cupiditate ratione totam tempora obcaecati, aliquam neque. Nesciunt repellendus, itaque maxime velit facilis, maiores laborum harum vero fugit unde, omnis voluptas perferendis molestias doloribus aperiam. Atque nam sit ullam maxime qui in incidunt libero ipsum, consectetur mollitia, reprehenderit dignissimos suscipit. Optio dicta voluptate sunt saepe aperiam reiciendis amet fuga, reprehenderit nisi repellat facere voluptates, quod deserunt accusantium repudiandae placeat at error consequatur porro qui. Fuga laboriosam odio sint totam delectus, exercitationem dicta nam beatae enim voluptate aliquid ducimus alias quos veritatis ullam harum aut expedita maiores nisi? Ipsa, corporis libero. Reprehenderit impedit consequatur maiores maxime unde dolorum expedita voluptatibus sunt laboriosam, esse dignissimos odio dolores adipisci libero. Ipsam voluptas eaque odio distinctio ducimus nostrum, obcaecati eius adipisci alias, vitae, similique esse modi fuga ut voluptates dolore provident saepe molestias magni veritatis? Voluptas laborum minus aliquam. Commodi, praesentium ullam.</p>
+
+    <!--Phone directory-->
+    <table id="phone-table" class="container">
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bob</td>
+          <td>Jakelin</td>
+          <td>123-456-7890</td>
+        </tr>
+        <tr>
+          <td>Ella</td>
+          <td>Pomney</td>
+          <td>222-333-4444</td>
+        </tr>
+        <tr>
+          <td>Cool</td>
+          <td>Dude</td>
+          <td>696-969-6969</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <hr>
+
+    <!--Comment form-->
+    <form action="submit.php" class="container">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="first-name">First name: </label>
+        <input type="text" name="first-name" required>
+        <br>
+        <br>
+        <label for="last-name">Last name: </label>
+        <input type="text" name="last-name" required>
+        <br>
+        <br>
+        <label for="phone-number">Phone number: </label>
+        <input type="range" name="thing" min=0 max=1000000000>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Other Questions</legend>
+
+        <label for="dogs-or-cats">Choose one: </label>
+        <br>
+        <input type="radio" name="dogs-or-cats"> Dogs
+        <input type="radio" name="dogs-or-cats"> Cats
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Submit!">
+    </form>
+
+    <hr>
+
+    <h2 id="about-us">About Us</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae voluptatum corrupti nemo sapiente maxime minus placeat harum expedita debitis velit incidunt repellat consectetur quas, saepe quaerat cumque! Libero veniam architecto rem. Vel aperiam odit deleniti illo ab? Quaerat enim nulla qui? Fuga ipsa, deleniti nesciunt, libero ipsum aliquid, ab tempore illum cupiditate facilis totam necessitatibus? Voluptatum quas saepe hic odio est delectus voluptate, vel, modi voluptatibus deserunt necessitatibus officiis obcaecati perferendis illum in eius nobis optio, eum quibusdam quo corrupti molestias unde nesciunt quos. Fugit officia quos consectetur nesciunt laudantium eius et nisi atque deleniti unde, porro cumque rem quod obcaecati placeat nulla voluptas corporis quibusdam odio alias? Aspernatur possimus assumenda placeat facilis fugit neque blanditiis, hic asperiores vero quod ab dignissimos labore qui expedita excepturi rerum doloremque odit est maxime accusamus optio, iusto vitae dolore! Amet rem libero officiis similique. Facilis delectus velit aliquam deleniti hic architecto iure labore!</p>
+
+    <h2>Other Info</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima eveniet deleniti neque odit, recusandae qui illum, blanditiis minus enim facere dolore maxime quidem. Blanditiis excepturi tempora hic dolores autem ab ipsum sequi atque. Expedita accusamus sequi corporis reprehenderit neque repellendus nulla temporibus, incidunt beatae. Libero nobis hic, totam distinctio nihil velit et ad commodi beatae dicta a eum nesciunt enim asperiores soluta odio. Consequatur doloremque, quos exercitationem et nostrum, nam ad eos eveniet neque dolorem saepe hic voluptas possimus. Iste, odit? Voluptas quaerat vero iusto perferendis molestias accusamus nisi, illum consectetur ratione odit ullam rerum sint. Facilis modi amet cum maiores? Animi temporibus magni ab maiores quo labore, quis explicabo exercitationem sed atque, fugit inventore ipsa neque. Ab dicta repudiandae mollitia beatae, excepturi exercitationem velit aperiam omnis doloribus fugiat cupiditate a, odit saepe modi nemo, iusto perspiciatis minus minima? Libero minima rerum excepturi! Voluptas totam veritatis ad porro quaerat.</p>
+  </main>
+
+  <footer class="container" id="footer">
+    <!--Copyright notice-->
+    <p>Copyright &copy; 2020 Basic Industries.</p>
+  </footer>
+</body>
+</html>

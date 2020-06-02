@@ -1,0 +1,31 @@
+Currently working on:
+Emmet Abbreviations
+
+To-do:
+Basic HTML
+Basic CSS
+Beginner JS
+Basic JS
+Intermediate HTML
+Intermediate CSS
+Intermediate JS
+Advanced JS (ES6+ Features)
+
+
+Finished:
+6/1/20 - Beginner HTML
+6/1/20 - Beginner CSS
+
+
+Things to explore:
+Sass (CSS with Superpowers)
+Motion UI (Flexible Sass Transitions)
+cPanel (Managed Website Hosting)
+Netlify / Github Pages (Static Hosting)
+Figma (Website Designer)
+ElectronJS (Desktop Applications using JS/HTML/CSS)
+Flutter (Google's UI Toolkit)
+
+
+Used resources:
+codeSTACKr's YouTube tutorials

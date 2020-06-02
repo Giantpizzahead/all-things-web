@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>Emmet!!!</title>
+</head>
+<body>
+    <h1>Emmet Abbreviations!</h1>
+
+    <p class="code-sample">h3{Hello Emmet!}</p>
+    <h3>Hello Emmet!</h3>
+
+    <p class="code-sample">h2.customh2class#customh2id{cool h2 heading}</p>
+    <h2 class="customh2class" id="customh2id">cool h2 heading</h2>
+
+    <p class="code-sample">p{paragraph 1}+p{paragraph 2}</p>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+
+    <p class="code-sample">ul>li{Item $}*5</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <p class="code-sample">img#emmet-cookie[src="images/cookie.png" width=10%]</p>
+    <img src="images/cookie.png" alt="" id="emmet-cookie" width="10%">
+
+    <p class="code-sample">div#useless-div>h2#useless-header{Useless Header}+p#useless-text{Lorem ipsum $}*3</p>
+    <div id="useless-div">
+        <h2 id="useless-header">Useless Header</h2>
+        <p id="useless-text">Lorem ipsum 1</p>
+        <p id="useless-text">Lorem ipsum 2</p>
+        <p id="useless-text">Lorem ipsum 3</p>
+    </div>
+
+    <p class="code-sample">ol[style="color:green;"]>li#item$$$@10{This is #$@10}*3</p>
+    <ol style="color:green;">
+        <li id="item010">This is #10</li>
+        <li id="item011">This is #11</li>
+        <li id="item012">This is #12</li>
+    </ol>
+
+    <p class="code-sample">table>thead>tr>th{Head $}*5^^tbody>tr*2>td{Item $}*5</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Head 1</th>
+                <th>Head 2</th>
+                <th>Head 3</th>
+                <th>Head 4</th>
+                <th>Head 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+                <td>Item 5</td>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+                <td>Item 5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="code-sample">p>{Click }+a[href="#"]{here}+{ to continue}</p>
+    <p>
+        Click 
+        <a href="#">here</a>
+        to continue
+    </p>
+
+    <p class="code-sample">form[action="server.php"]>(fieldset.form-fieldset>legend{Section $}+input:b#button$[value="Button $"])*3+input:submit[value="Finish!"]</p>
+    <form action="server.php">
+        <fieldset class="form-fieldset">
+            <legend>Section 1</legend>
+            <input type="button" value="Button 1" id="button1">
+        </fieldset>
+        <fieldset class="form-fieldset">
+            <legend>Section 2</legend>
+            <input type="button" value="Button 2" id="button2">
+        </fieldset>
+        <fieldset class="form-fieldset">
+            <legend>Section 3</legend>
+            <input type="button" value="Button 3" id="button3">
+        </fieldset>
+        <input type="submit" value="Finish!">
+    </form>
+
+    <h1>Larger Examples</h1>
+</body>
+</html>

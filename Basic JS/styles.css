@@ -5,6 +5,16 @@ body {
   font-size: 1.1rem;
 }
 
+.code-sample {
+  color: blue;
+}
+
+/* CSS Pseudoelement */
+.code-sample::before {
+  content: "> ";
+  color: red;
+}
+
 #maze-input {
   font-size: 1.3rem;
 }

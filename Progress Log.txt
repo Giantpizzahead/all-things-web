@@ -1,17 +1,17 @@
 Currently working on:
-Basic HTML
-Basic CSS
+Intermediate JS
 
 
 To-do:
 Intermediate HTML
 Intermediate CSS
-Intermediate JS
-Sass (CSS with Superpowers)
 Advanced JS (ES6+ Features)
+Basic Uses of SASS
 
 
 Learned:
+6/3/20 - Basic HTML
+6/3/20 - Basic CSS
 6/2/20 - Basic JS
 6/2/20 - Getting used to Emmet Abbreviations
 6/2/20 - Beginner JS

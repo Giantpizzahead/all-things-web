@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', consolas, 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+.code-sample {
+  color: blue;
+}
+
+/* CSS Pseudoelement */
+.code-sample::before {
+  content: "> ";
+  color: red;
+}
+
+.css-sample {
+  color: goldenrod;
+}
+
+.emmet-class-1 {
+  color: #ff00ff;
+}
+
+.emmet-class-2 {
+  background-color: #00ffff;
+  color: #ff0000;
+  display: inline-block;
+  padding-left: 100px;
+  padding-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-style: italic;
+}
+
+#sidebar {
+  float: right;
+}
+
+#sidebar li {
+  background-color: #cccccc;
+  list-style-type: none;
+  padding: 1em;
+}
+
+#sidebar a {
+  color: #000;
+  text-decoration: none;
+  padding: 2em;
+}
+
+#sidebar a:hover {
+  color: #ffffff;
+}

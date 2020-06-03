@@ -1,17 +1,19 @@
 Currently working on:
-Getting used to Emmet Abbreviations
-
-To-do:
 Basic HTML
 Basic CSS
-Basic JS
+
+
+To-do:
 Intermediate HTML
 Intermediate CSS
 Intermediate JS
+Sass (CSS with Superpowers)
 Advanced JS (ES6+ Features)
 
 
 Learned:
+6/2/20 - Basic JS
+6/2/20 - Getting used to Emmet Abbreviations
 6/2/20 - Beginner JS
 6/2/20 - Basic Emmet Abbreviations
 6/1/20 - Beginner CSS
@@ -19,7 +21,6 @@ Learned:
 
 
 Things to explore:
-Sass (CSS with Superpowers)
 Motion UI (Flexible Sass Transitions)
 cPanel (Managed Website Hosting)
 Netlify / Github Pages (Static Hosting)

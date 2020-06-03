@@ -1,0 +1,129 @@
+{
+  "animStates": [
+    {
+      "text": "Welcome to innovation.",
+      "delay": 0,
+      "speed": 100
+    },
+    {
+      "text": "Welcome to ",
+      "delay": 20,
+      "speed": 100
+    },
+    {
+      "text": "Welcome to a new world.",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "P",
+      "delay": 20,
+      "speed": 80
+    },
+    {
+      "text": "Prepare to be amazed.",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "Prepare to be ",
+      "delay": 20,
+      "speed": 100
+    },
+    {
+      "text": "Prepare to be dazzled.",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "Prepare to be ",
+      "delay": 20,
+      "speed": 100
+    },
+    {
+      "text": "Prepare to be inspired.",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "W",
+      "delay": 20,
+      "speed": 80
+    },
+    {
+      "text": "Welcome to all things web.",
+      "delay": 0,
+      "speed": 125
+    },
+    {
+      "text": "Welcome to ",
+      "delay": 50,
+      "speed": 80
+    },
+    {
+      "text": "Welcome to an easter egg.",
+      "delay": 0,
+      "speed": 100
+    },
+    {
+      "text": "W",
+      "delay": 50,
+      "speed": 80
+    },
+    {
+      "text": "Why are you still here?",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "G",
+      "delay": 40,
+      "speed": 80
+    },
+    {
+      "text": "Go explore some websites!",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "O",
+      "delay": 40,
+      "speed": 80
+    },
+    {
+      "text": "Or... don't?",
+      "delay": 0,
+      "speed": 150
+    },
+    {
+      "text": "W",
+      "delay": 40,
+      "speed": 80
+    },
+    {
+      "text": "Well, I'm gonna loop now.",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "T",
+      "delay": 30,
+      "speed": 80
+    },
+    {
+      "text": "Thanks for sticking around!",
+      "delay": 0,
+      "speed": 80
+    },
+    {
+      "text": "W",
+      "delay": 30,
+      "speed": 80
+    },
+    {
+      "text": "LOOP",
+      "delay": 99999999,
+      "speed": 150
+    }
+  ]
+}

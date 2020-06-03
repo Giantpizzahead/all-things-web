@@ -7,7 +7,8 @@
     <title>Emmet!!!</title>
 </head>
 <body>
-    <h1>Emmet Abbreviations!</h1>
+    <h1>Emmet Self-Reference / Practice</h1>
+    <p>Good tutorial to follow: <a href="https://youtu.be/EzGWXTASWWo" target="_blank" rel="noopener noreferrer">codeSTACKr's Emmet Video</a></p>
 
     <p class="code-sample">h3{Hello Emmet!}</p>
     <h3>Hello Emmet!</h3>
@@ -27,6 +28,9 @@
         <li>Item 4</li>
         <li>Item 5</li>
     </ul>
+
+    <p class="code-sample">p>lorem30</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem excepturi iure cum quibusdam architecto sed quam. Consequuntur rerum non nam reiciendis, ab molestias aperiam nostrum officiis. Vero expedita dolores consequuntur?</p>
 
     <p class="code-sample">img#emmet-cookie[src="images/cookie.png" width=10%]</p>
     <img src="images/cookie.png" alt="" id="emmet-cookie" width="10%">
@@ -99,6 +103,23 @@
         <input type="submit" value="Finish!">
     </form>
 
-    <h1>Larger Examples</h1>
+    <p class="code-sample">h2.emmet-class-1{A heading}</p>
+    <p class="code-sample css-sample">.emmet-class-1 { c#f0f }</p>
+    <h2 class="emmet-class-1">A heading</h2>
+
+    <p class="code-sample">h2.emmet-class-2{Another heading}</p>
+    <p class="code-sample css-sample">.emmet-class-2 { bc#0ff c#f00 dib pl100 pr50 mt50 mb100 fft fsi }</p>
+    <h2 class="emmet-class-2">Another heading</h2>
+
+    <p class="code-sample">nav#sidebar>ul>(li>a[href="#"]{This is link $})*3</p>
+    <p class="code-sample css-sample">#sidebar { flr } #sidebar li { bc#ccc lstylet:none p1em } #sidebar a { c tdn p2em } #sidebar a:hover { c#f }</p>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#">This is link 1</a></li>
+            <li><a href="#">This is link 2</a></li>
+            <li><a href="#">This is link 3</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

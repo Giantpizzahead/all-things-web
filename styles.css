@@ -29,13 +29,12 @@ footer {
   text-align: center;
 }
 
-.typing {
-  overflow: hidden;
+#typing-header {
   white-space: nowrap;
   border-right: 4px solid;
-  width: 22ch;
-  animation: typing-anim 3s steps(22), cursor-flash 1s infinite;
-  -webkit-animation: typing-anim 3s steps(22), cursor-flash 1s infinite;
+  width: 1ch;
+  animation: cursor-flash 1s infinite;
+  -webkit-animation: cursor-flash 1s infinite;
 }
 
 .list-header {
@@ -43,7 +42,7 @@ footer {
 }
 
 .list-description {
-
+  
 }
 
 .website-list {
@@ -98,18 +97,22 @@ footer {
   100% { border-color: white; }
 }
 
-@keyframes typing-anim {
-  0% { width: 0ch; }
-  30% { width: 0ch; }
-  100% { width: 22ch; }
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   header {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .typing {
     border-right: 2px solid;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    font-size: 0.9em;
+  }
+
+  .typing {
+    border-right: 1.5px solid;
   }
 }

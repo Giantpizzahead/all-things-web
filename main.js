@@ -6,7 +6,10 @@ var animStates;
 // Fetch JSON file with details on each animation state
 fetch("animStates.json")
   .then(response => response.json())
-  .then(json => animStates = json.animStates);
+  .then(json => {
+    animStates = json.animStates;
+    setTimeout(typeAnimation, 100);
+  });
 
 function typeAnimation() {
   var output = document.getElementById("typing-header");
@@ -46,7 +49,6 @@ function typeAnimation() {
   }
   setTimeout(typeAnimation, animStates[currAnim].speed);
 }
-setTimeout(typeAnimation, 100);
 
 // ---Bad link glitch effect---
 

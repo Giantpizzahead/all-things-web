@@ -11,6 +11,12 @@ body {
   font-family: Roboto, Merriweather, Arial, Helvetica, sans-serif;
   background-color: black;
   overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  padding-bottom: 4rem;
 }
 
 .btn {
@@ -49,9 +55,22 @@ body {
   line-height: 2rem;
 }
 
+.text-section ul {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+.text-section a {
+  color: rgb(123, 223, 241);
+}
+
 .copy-section {
   background-color: black;
   color: #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;

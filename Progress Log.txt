@@ -1,15 +1,19 @@
 Currently working on:
-Intermediate JS
+Intermediate HTML
+Intermediate CSS
 
 
 To-do:
-Intermediate HTML
-Intermediate CSS
 Advanced JS (ES6+ Features)
+Beginner PHP
+Basic PHP
+Intermediate PHP
 Basic Uses of SASS
+The Transition into Frameworks (a longgggggggg way from now)
 
 
 Learned:
+6/4/20 - Intermediate JS
 6/3/20 - Basic HTML
 6/3/20 - Basic CSS
 6/2/20 - Basic JS
@@ -23,6 +27,8 @@ Learned:
 Things to explore:
 Motion UI (Flexible Sass Transitions)
 cPanel (Managed Website Hosting)
+Python Flask (Web Microframework)
+Python Django (Web Framework)
 Netlify / Github Pages (Static Hosting)
 Figma (Website Designer)
 ElectronJS (Desktop Applications using JS/HTML/CSS)
@@ -30,5 +36,6 @@ Flutter (Google's UI Toolkit)
 
 
 Used resources:
+mmtut's YouTube tutorials
 codeSTACKr's YouTube tutorials
 Lots of Googling for stuff

@@ -1,0 +1,34 @@
+{
+  "musicName": "Just JS and Beats",
+  "musicDescription": "By Giantpizzahead",
+  "musicVolume": 0.5,
+  "musicBPM": 130,
+  "musicOffset": 3.02,
+  "attacks": [
+    {
+      "time": "1 1",
+      "repeat": "8 4",
+      "type": "lineAttack",
+      "isVertical": true,
+      "minSide": 50,
+      "maxSide": 100,
+      "minWarn": 0.5,
+      "maxWarn": 1,
+      "minOTime": 1,
+      "maxOTime": 1.5
+    },
+    {
+      "time": "9 1",
+      "repeat": "8 4",
+      "type": "gridAttack",
+      "numRows": 5,
+      "numCols": 8,
+      "horSpacing": 20,
+      "vertSpacing": 15,
+      "minWarn": 0.5,
+      "maxWarn": 1,
+      "minOTime": 1,
+      "maxOTime": 1.5
+    }
+  ]
+}

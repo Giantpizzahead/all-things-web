@@ -1,10 +1,11 @@
 Currently working on:
+Advanced JS (ES6+ Features)
+The Portfolio (Guided): https://www.youtube.com/watch?v=kbLfWKGVsMQ
 Intermediate HTML
 Intermediate CSS
 
 
 To-do:
-Advanced JS (ES6+ Features)
 Beginner PHP
 Basic PHP
 Intermediate PHP

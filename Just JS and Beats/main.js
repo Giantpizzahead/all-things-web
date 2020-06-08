@@ -284,7 +284,7 @@ function tick() {
 
 function lineAttack(isVertical, minSide, maxSide, waitTime, minWarn, maxWarn, minOTime, maxOTime) {
   let s = randRange(minSide, maxSide);
-  let loc = randRange(-s, isVertical ? canvas.width : canvas.height);
+  let loc = randRange(-s/2, (isVertical ? canvas.width : canvas.height) - s/2);
   let warningTime = randRange(minWarn, maxWarn);
   let obstacleTime = randRange(minOTime, maxOTime);
   if (isVertical) {
@@ -379,30 +379,44 @@ function loadLevel(level) {
 
       // Parse attack type
       if (a.type == 'lineAttack') {
-        time -= a.maxWarn;
+        time -= a.maxWarn * timePerMeasure;
         let isVertical = a.isVertical;
         let minSide = a.minSide;
         let maxSide = a.maxSide;
-        let minWarn = a.minWarn * 60;
-        let maxWarn = a.maxWarn * 60;
-        let minOTime = a.minOTime * 60;
-        let maxOTime = a.maxOTime * 60;
+        let minWarn = a.minWarn * timePerMeasure * 60;
+        let maxWarn = a.maxWarn * timePerMeasure * 60;
+        let minOTime = a.minOTime * timePerMeasure * 60;
+        let maxOTime = a.maxOTime * timePerMeasure * 60;
         functionToCall = function() {
           lineAttack(isVertical, minSide, maxSide, maxWarn, minWarn, maxWarn, minOTime, maxOTime);
         };
       } else if (a.type == 'gridAttack') {
-        time -= a.maxWarn;
+        time -= a.maxWarn * timePerMeasure;
         let numRows = a.numRows;
         let numCols = a.numCols;
         let horSpacing = a.horSpacing;
         let vertSpacing = a.vertSpacing;
-        let minWarn = a.minWarn * 60;
-        let maxWarn = a.maxWarn * 60;
-        let minOTime = a.minOTime * 60;
-        let maxOTime = a.maxOTime * 60;
+        let minWarn = a.minWarn * timePerMeasure * 60;
+        let maxWarn = a.maxWarn * timePerMeasure * 60;
+        let minOTime = a.minOTime * timePerMeasure * 60;
+        let maxOTime = a.maxOTime * timePerMeasure * 60;
         functionToCall = function() {
           gridAttack(numRows, numCols, horSpacing, vertSpacing, maxWarn, minWarn, maxWarn, minOTime, maxOTime);
         };
+      } else if (a.type == 'customRect') {
+        time -= a.warnTime * timePerMeasure;
+        let x = a.x;
+        let y = a.y;
+        let w = a.w;
+        let h = a.h;
+        let warnTime = a.warnTime * timePerMeasure * 60;
+        let obstacleTime = a.obstacleTime * timePerMeasure * 60;
+        functionToCall = function() {
+          warnings.push(new WarningRect(x, y, w, h, warnTime, warnTime, obstacleTime));
+        }
+      } else if (a.type == 'comment') {
+        // Ignore comments
+        continue;
       } else {
         console.log("Unknown attack type", a.type);
       }
@@ -416,7 +430,7 @@ function loadLevel(level) {
           // console.log(time);
           attacks.push(new Attack(time, functionToCall));
           time = musicOffset + (measure + Math.floor((numBeats * (i+1)) / 4)) * timePerMeasure + (beat + (numBeats * (i+1)) % 4) * timePerBeat;
-          time -= a.maxWarn;
+          time -= a.maxWarn * timePerMeasure;
         }
       } else {
         attacks.push(new Attack(time, functionToCall));
@@ -433,6 +447,7 @@ function startGame() {
   playerAlive = true;
   numberDeaths = 0;
   music.play();
+  // music.soundElement.currentTime = 13;
 
   clearScreen();
   setInterval(tick, 1000/FPS);

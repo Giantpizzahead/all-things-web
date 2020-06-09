@@ -10,27 +10,29 @@ canvas.addEventListener('contextmenu', rightClick);
 canvas.addEventListener('keydown', keyDown);
 canvas.addEventListener('keyup', keyUp);
 
-// Initial text
-ctx.font = '80px lato';
-ctx.fillStyle = '#66EBFF';
-ctx.textAlign = 'center';
-ctx.fillText('Welcome to Just JS and Beats!', 860, 300);
-ctx.font = '50px lato';
-ctx.fillStyle = '#99FF99';
-ctx.fillText('Use WASD or arrow keys to move.', 860, 390);
-ctx.fillText('Dodge the red obstacles to win!', 860, 470);
-ctx.fillStyle = '#FF9999';
-ctx.fillText('Simple... right?', 860, 550);
-ctx.fillStyle = '#99FF99';
-ctx.fillText('Press Escape at any time to return to the menu.', 860, 630);
-ctx.font = '65px lato';
-ctx.fillStyle = '#66EBFF';
-ctx.fillText('Click anywhere to begin...', 860, 735);
-ctx.font = '40px lato';
-ctx.fillStyle = '#99FF99';
-ctx.fillText('(Warning: Flashing lights)', 860, 1000);
-ctx.fillText('Inspired by Just Shapes and Beats', 860, 1055);
-ctx.textAlign = 'start';
+window.onload = function() {
+  // Initial text
+  ctx.font = '80px lato';
+  ctx.fillStyle = '#66EBFF';
+  ctx.textAlign = 'center';
+  ctx.fillText('Welcome to Just JS and Beats!', 860, 300);
+  ctx.font = '50px lato';
+  ctx.fillStyle = '#99FF99';
+  ctx.fillText('Use WASD or arrow keys to move.', 860, 390);
+  ctx.fillText('Dodge the red obstacles to win!', 860, 470);
+  ctx.fillStyle = '#FF9999';
+  ctx.fillText('Simple... right?', 860, 550);
+  ctx.fillStyle = '#99FF99';
+  ctx.fillText('Press Escape at any time to return to the menu.', 860, 630);
+  ctx.font = '65px lato';
+  ctx.fillStyle = '#66EBFF';
+  ctx.fillText('Click anywhere to begin...', 860, 735);
+  ctx.font = '40px lato';
+  ctx.fillStyle = '#99FF99';
+  ctx.fillText('(Warning: Flashing lights)', 860, 1000);
+  ctx.fillText('Inspired by Just Shapes and Beats', 860, 1055);
+  ctx.textAlign = 'start';
+}
 
 class Player {
   constructor(x, y, speed, size, drawSize) {
@@ -524,7 +526,7 @@ function rightClick(evt) {
 }
 
 function keyDown(evt) {
-  console.log(evt.keyCode);
+  // console.log(evt.keyCode);
   keyHeld[evt.keyCode] = true;
   if (currentScreen == 'levelSelect') {
     if (evt.keyCode >= 49 && evt.keyCode <= 57) {

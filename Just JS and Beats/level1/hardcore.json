@@ -2552,18 +2552,18 @@
       "time": "225 1",
       "type": "customRect",
       "x": 0,
-      "y": 510,
+      "y": 530,
       "w": 1720,
-      "h": 60,
+      "h": 20,
       "warnTime": 4,
       "obstacleTime": 3.5
     },
     {
       "time": "225 1",
       "type": "customRect",
-      "x": 830,
+      "x": 850,
       "y": 0,
-      "w": 60,
+      "w": 20,
       "h": 1080,
       "warnTime": 4,
       "obstacleTime": 3.5

@@ -1,0 +1,27 @@
+{
+  "musicName": "Just JS and Beats",
+  "musicDescription": "By Giantpizzahead",
+  "musicVolume": 0.6,
+  "musicBPM": 130,
+  "__musicOffset": 3.05,
+  "musicOffset": 3.05,
+  "musicStartTime": 0,
+  "difficulties": [
+    {
+      "id": "normal",
+      "name": "Normal",
+      "hitsToPass": 10,
+      "colorR": 90,
+      "colorG": 255,
+      "colorB": 90
+    },
+    {
+      "id": "hardcore",
+      "name": "Hardcore",
+      "hitsToPass": 15,
+      "colorR": 255,
+      "colorG": 90,
+      "colorB": 90
+    }
+  ]
+}

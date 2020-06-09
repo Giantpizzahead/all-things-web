@@ -1,0 +1,26 @@
+{
+  "musicName": "Test Music Name",
+  "musicDescription": "By a test",
+  "musicVolume": 0.6,
+  "musicBPM": 130,
+  "musicOffset": 3.05,
+  "musicStartTime": 0,
+  "difficulties": [
+    {
+      "id": "test1",
+      "name": "Test 1",
+      "hitsToPass": 1,
+      "colorR": 255,
+      "colorG": 0,
+      "colorB": 0
+    },
+    {
+      "id": "test2",
+      "name": "Test 2",
+      "hitsToPass": 1,
+      "colorR": 255,
+      "colorG": 0,
+      "colorB": 255
+    }
+  ]
+}

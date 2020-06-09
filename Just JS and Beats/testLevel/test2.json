@@ -1,0 +1,37 @@
+{
+  "attacks": [
+    {
+      "time": "1 1",
+      "type": "comment",
+      "value": "--------INTRO SEQUENCE--------"
+    },
+    {
+      "time": "1 1",
+      "repeat": "7 4",
+      "type": "lineAttack",
+      "isVertical": false,
+      "minSide": 50,
+      "maxSide": 75,
+      "minWarn": 4.5,
+      "maxWarn": 4.5,
+      "minOTime": 3,
+      "maxOTime": 3
+    },
+    {
+      "time": "8 1",
+      "repeat": "3 2",
+      "type": "lineAttack",
+      "isVertical": false,
+      "minSide": 250,
+      "maxSide": 250,
+      "minWarn": 4,
+      "maxWarn": 4,
+      "minOTime": 3,
+      "maxOTime": 3
+    },
+    {
+      "time": "13 1",
+      "type": "levelComplete"
+    }
+  ]
+}

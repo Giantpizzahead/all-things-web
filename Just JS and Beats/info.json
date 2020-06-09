@@ -1,0 +1,18 @@
+{
+  "levels": [
+    {
+      "id": "level1",
+      "name": "Just JS and Beats",
+      "colorR": 255,
+      "colorG": 176,
+      "colorB": 251
+    },
+    {
+      "id": "testLevel",
+      "name": "Test Level",
+      "colorR": 255,
+      "colorG": 255,
+      "colorB": 0
+    }
+  ]
+}

@@ -6,6 +6,7 @@
   "__musicOffset": 3.05,
   "musicOffset": 3.05,
   "musicStartTime": 0,
+  "invincibilityFrames": 60,
   "difficulties": [
     {
       "id": "normal",

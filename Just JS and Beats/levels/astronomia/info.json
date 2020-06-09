@@ -1,0 +1,20 @@
+{
+  "musicName": "Astronomia",
+  "musicDescription": "By a coffin",
+  "musicVolume": 0.5,
+  "musicBPM": 126,
+  "__musicOffset": 2.9,
+  "musicOffset": 2.9,
+  "musicStartTime": 0,
+  "invincibilityFrames": 28,
+  "difficulties": [
+    {
+      "id": "death",
+      "name": "Death",
+      "hitsToPass": 42,
+      "colorR": 50,
+      "colorG": 50,
+      "colorB": 50
+    }
+  ]
+}

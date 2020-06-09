@@ -5,6 +5,7 @@
   "musicBPM": 130,
   "musicOffset": 3.05,
   "musicStartTime": 0,
+  "invincibilityFrames": 15,
   "difficulties": [
     {
       "id": "test1",

@@ -312,14 +312,14 @@ class BombCircle extends MovingCircle {
 
 let gameStarted = false;
 let currentScreen = 'idle';
-let playerInvincibility = 0;
+let playerInvincibility = 0, invincibilityFrames;
 let screenFlashTime = 0;
 let numberDeaths = 0;
 let tickIntervalID;
 let level, diff;
 let music;
 let musicName, musicDescription, musicBPM, timePerMeasure, timePerBeat, musicOffset;
-let hitSound1 = new sound("sounds/hit1.mp3", 0.6), hitSound2 = new sound("sounds/hit2.mp3", 0.7);
+let hitSound1 = new sound("sounds/hit1.mp3", 0.5), hitSound2 = new sound("sounds/hit2.mp3", 0.6);
 let player = new Player(canvas.width / 2, canvas.height / 2, 6, 12, 15);
 let keyHeld = [];
 for (let i = 0; i < NUM_KEYS; i++) keyHeld.push(false);
@@ -368,7 +368,7 @@ function tick() {
       // Player lost!
       if (playerInvincibility == 0) {
         numberDeaths++;
-        playerInvincibility = 60;
+        playerInvincibility = invincibilityFrames;
         wasHit = true;
       }
     }
@@ -642,16 +642,17 @@ function loadLevelSelect() {
 }
 
 function loadDiffSelect(level) {
-  fetch(`${level}/info.json`)
+  fetch(`levels/${level}/info.json`)
   .then(res => res.json())
   .then(data => {
-    music = new sound(`${level}/music.mp3`, data.musicVolume);
+    music = new sound(`levels/${level}/music.mp3`, data.musicVolume);
     musicName = data.musicName;
     musicDescription = data.musicDescription;
     musicBPM = data.musicBPM;
     timePerMeasure = 60 / musicBPM;
     timePerBeat = timePerMeasure / 4;
     musicOffset = data.musicOffset;
+    invincibilityFrames = data.invincibilityFrames;
     difficulties = data.difficulties;
     if (data.musicStartTime != 0) music.soundElement.currentTime = data.musicOffset + data.musicStartTime * timePerMeasure;
     // console.log(timePerMeasure, timePerBeat);
@@ -664,7 +665,7 @@ function loadGame(difficulty) {
   obstacles = [];
   attacks = [];
   // Load json
-  fetch(`${level.id}/${difficulty}.json`)
+  fetch(`levels/${level.id}/${difficulty}.json`)
   .then(res => res.json())
   .then(data => {
     // Parse all attacks
@@ -679,7 +680,7 @@ function loadGame(difficulty) {
         // Split time into measure / beat
         let split = a.time.split(' ');
         measure = parseInt(split[0]) - 1;
-        beat = parseInt(split[1]) - 1;
+        beat = parseFloat(split[1]) - 1;
         time = musicOffset + measure * timePerMeasure + beat * timePerBeat;
       }
 

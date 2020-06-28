@@ -11,7 +11,7 @@
     {
       "id": "normal",
       "name": "Normal",
-      "hitsToPass": 10,
+      "hitsToPass": 7,
       "colorR": 90,
       "colorG": 255,
       "colorB": 90
@@ -19,7 +19,7 @@
     {
       "id": "hardcore",
       "name": "Hardcore",
-      "hitsToPass": 15,
+      "hitsToPass": 11,
       "colorR": 255,
       "colorG": 90,
       "colorB": 90

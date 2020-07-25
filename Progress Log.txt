@@ -1,18 +1,17 @@
 Currently working on:
-The Portfolio (Guided): https://www.youtube.com/watch?v=kbLfWKGVsMQ
-Intermediate HTML
-Intermediate CSS
+Beginner React
 
 
 To-do:
-Basic PHP
-Intermediate PHP
-Basic Uses of SASS
-The Transition into Frameworks (a longgggggggg way from now)
+Basic React
+Intermediate React
 
 
 Learned:
-6/20/20 - Beginner PHP
+7/24/20 - Beginner Jinja2
+7/14/20 - Beginner Flask
+6/19/20 - Beginner SQL
+6/19/20 - Beginner PHP
 6/8/20 - Advanced JS (ES6+ Features)
 6/4/20 - Intermediate JS
 6/3/20 - Basic HTML
@@ -28,7 +27,6 @@ Learned:
 Things to explore:
 Motion UI (Flexible Sass Transitions)
 cPanel (Managed Website Hosting)
-Python Flask (Web Microframework)
 Python Django (Web Framework)
 Netlify / Github Pages (Static Hosting)
 Figma (Website Designer)
@@ -40,3 +38,4 @@ Used resources:
 mmtut's YouTube tutorials
 codeSTACKr's YouTube tutorials
 Lots of Googling for stuff
+Heroku

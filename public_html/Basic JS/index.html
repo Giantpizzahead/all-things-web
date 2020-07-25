@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JS</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>Basic JS</h1>
+
+  <!--The hello world of Javascript-->
+  <section>
+    <h2>Hello Javascript</h2>
+    <button onclick="alert('Hello JS!');">Click Me!</button>
+  </section>
+
+  <!--Cookie Incrementer (Credit to kleb)-->
+  <section>
+    <h2 id="cookie-title">Cookie Clicker (Epilepsy Warning)</h2>
+    <p>Cookies: <span id="cookie-counter">0</span></p>
+    <button onclick="cookieClicked();" id="cookie-button"><img src="images/cookie.png" id="cookie-image"></button>
+  </section>
+
+  <!--Automatic Maze Solver (Theoretically O(N^2), but seems to have some issue somewhere... oh well)-->
+  <section>
+    <h2>Maze Solver</h2>
+    <label for="maze-input">Enter your maze here (# for wall, Space for open area, A for start location, B for end location):</label>
+    <br><br>
+    <textarea name="maze-input" id="maze-input" cols="60" rows="20">
+#########################################
+#      A#   #     #     #   #           #
+### # ##### # ##### # ##### # ##### ### #
+#   #           #       # # #  B#       #
+########### ##### # # ### # ##### ### ###
+# #   #   #   # # # # #   # # #     # # #
+# # ##### # # # # ### ### # # ##### ### #
+#   #     # #   # #   #     # #     # # #
+# ### # # ### ####### ### ### # ##### # #
+#     # #   # # #     # # #     # # #   #
+##### # ### # # # # ### # # ### # # ### #
+#     #   #       #   #     #     #     #
+####### ############# # # ### ### # # ###
+#                 #     # #     #   #   #
+#########################################
+</textarea>
+    <br><br>
+    <button onclick="solveMaze();">Solve Maze</button>
+    <br>
+    <p id="maze-output">Please input a maze to solve.</p>
+    <p id="maze-solution"></p>
+  </section>
+
+  <!--Client-side authentication-->
+  <section>
+    <h2><a href="login.html">Go to Login Page</a></h2>
+  </section>
+</body>
+</html>

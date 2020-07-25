@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url("../images/header-logo.jpg");
+  height: 300px;
+  background-size: 100% 100%;
+}
+
+#main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 210px;
+  font-size: min(10vw, 10rem);
+  font-weight: 7rem;
+  color: white;
+}
+
+#login-info {
+  display: flex;
+  justify-content: flex-end;
+  height: 25px;
+  padding: 0 10px;
+  color: white;
+}
+
+.login-info-text {
+  padding: 10px;
+}
+
+.login-info-link {
+  color: #ff7700;
+  transition: color ease 0.3s;
+}
+
+.login-info-link:hover {
+  color: #ffcc00;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.nav-item {
+  width: 100%;
+  list-style: none;
+}
+
+.nav-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 1.25rem;
+  transition: background-color ease 0.3s;
+}
+
+.nav-item a:hover {
+  background-color: rgba(100, 0, 0, 0.75);
+}
+
+main {
+  margin: 0 auto;
+  width: min(95vw, 720px);
+  padding: 25px;
+  padding-bottom: 75px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.center-form h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.center-form input[type="text"], .center-form input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.center-form button {
+  background-color: #eb1d16;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0 14px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity ease 0.3s;
+}
+
+.center-form button:hover {
+  opacity: 0.8;
+}
+
+.alert-box {
+  padding: 15px 20px;
+  background-color: rgba(244, 67, 54, 0.75);
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+}
+
+.alert-success {
+  background-color: rgba(76, 175, 80, 0.75);
+  border: 2px solid #00ff00;
+}
+
+.alert-info {
+  background-color: rgba(33, 150, 243, 0.75);
+  border: 2px solid #0000ff;
+}
+
+.big-center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.medium-center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 200px;
+  }
+
+  #main-header {
+    height: 110px;
+  }
+
+  .big-center-text {
+    font-size: 3rem;
+  }
+  
+  .medium-center-text {
+    font-size: 1.5rem;
+  }
+}

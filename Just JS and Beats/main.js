@@ -628,15 +628,6 @@ function displayMenu() {
     ctx.font = '50px lato';
     ctx.fillStyle = '#444444';
     ctx.fillText('(Press Enter to continue)', 860, 785);
-
-    if (diff.id == "hardcore") {
-      ctx.fillStyle = '#9999CC';
-      if (numberDeaths <= diff.hitsToPass) {
-        ctx.fillText('Password: determined4life', 860, 940);
-      } else {
-        ctx.fillText('Pass the level to get the password!', 860, 940);
-      }
-    }
     ctx.textAlign = 'start';
   }
 }

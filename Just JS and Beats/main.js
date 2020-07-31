@@ -629,6 +629,15 @@ function displayMenu() {
     ctx.fillStyle = '#444444';
     ctx.fillText('(Press Enter to continue)', 860, 785);
     ctx.textAlign = 'start';
+
+    if (diff.id == "hardcore") {
+      ctx.fillStyle = '#9999CC';
+      if (numberDeaths <= diff.hitsToPass) {
+        ctx.fillText('https://tinyurl.com/V2P3DeterminationScript', 860, 940);
+      } else {
+        ctx.fillText('Pass the level to get the link!', 860, 940);
+      }
+    }
   }
 }
 

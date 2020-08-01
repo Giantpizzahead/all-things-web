@@ -628,7 +628,6 @@ function displayMenu() {
     ctx.font = '50px lato';
     ctx.fillStyle = '#444444';
     ctx.fillText('(Press Enter to continue)', 860, 785);
-    ctx.textAlign = 'start';
 
     if (diff.id == "hardcore") {
       ctx.fillStyle = '#9999CC';
@@ -638,6 +637,8 @@ function displayMenu() {
         ctx.fillText('Pass the level to get the link!', 860, 940);
       }
     }
+
+    ctx.textAlign = 'start';
   }
 }
 
